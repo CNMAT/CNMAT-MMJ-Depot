@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>CNMAT Max/MSP Summer Workshop 2012
+Lab Assignment 2</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html --> 
+<meta name="src" content="lesson_2_assignment.tex"> 
+<meta name="date" content="2012-08-24 10:22:00"> 
+<link rel="stylesheet" type="text/css" href="lesson_2_assignment.css"> 
+</head><body 
+>
+   <div class="maketitle">
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+
+<h2 class="titleHead">CNMAT Max/MSP Summer Workshop 2012<br />
+Lab Assignment 2</h2>
+<div class="author" ></div><br />
+<div class="date" ><span 
+class="cmr-12">August 24, 2012</span></div>
+   </div>
+   <h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Summary</h3>
+<!--l. 13--><p class="noindent" >In this lesson, you will expand on the Theremin you built in lesson 1 by adding vibrato as a parameter
+that you can control with the Gametrak, adding a second voice, and adding distortion that increases with
+the volume.
+<!--l. 17--><p class="noindent" >
+   <h4 class="likesubsectionHead"><a 
+ id="x1-2000"></a>Topics</h4>
+<!--l. 18--><p class="noindent" >Polyphony, encapsulation, abstraction, reuse, parameters.
+<!--l. 20--><p class="noindent" >
+   <h4 class="likesubsectionHead"><a 
+ id="x1-3000"></a>Objects Introduced</h4>
+<!--l. 22--><p class="noindent" >[<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#patcher" >patcher</a>&#x00A0;],  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#tanh~" >tanh</a>~&#x00A0;] ,  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#times~" >times</a>~&#x00A0;] ,  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#plus~" >plus</a>~&#x00A0;]
+<!--l. 24--><p class="noindent" >
+   <h4 class="likesubsectionHead"><a 
+ id="x1-4000"></a>Relevant Tutorials</h4>
+<!--l. 25--><p class="noindent" >
+   <h5 class="likesubsubsectionHead"><a 
+ id="x1-5000"></a>Basic</h5>
+<!--l. 27--><p class="noindent" >
+     <dl class="enumerate"><dt class="enumerate">
+   1. </dt><dd 
+class="enumerate"><a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#basicchapter14" >Encapsulation</a>
+                                                                                         
+                                                                                         
+     </dd><dt class="enumerate">
+   2. </dt><dd 
+class="enumerate"><a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#basicchapter15" >Abstraction</a>
+     </dd><dt class="enumerate">
+   3. </dt><dd 
+class="enumerate"><a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#basicchapter20" >Presentation Mode</a>
+     </dd><dt class="enumerate">
+   4. </dt><dd 
+class="enumerate"><a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#basicchapter21" >Controlling Data Flow</a></dd></dl>
+<!--l. 32--><p class="noindent" >
+   <h5 class="likesubsubsectionHead"><a 
+ id="x1-6000"></a>MSP</h5>
+<!--l. 34--><p class="noindent" >
+     <dl class="enumerate"><dt class="enumerate">
+   1. </dt><dd 
+class="enumerate"><a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#mspchapter01" >Test Tone</a>
+     </dd><dt class="enumerate">
+   2. </dt><dd 
+class="enumerate"><a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#mspchapter02" >Adjustable Oscillator</a>
+     </dd><dt class="enumerate">
+   3. </dt><dd 
+class="enumerate"><a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#mspchapter03" >Wavetable Oscillator</a>
+     </dd><dt class="enumerate">
+   4. </dt><dd 
+class="enumerate"><a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#mspchapter10" >Vibrato and FM</a></dd></dl>
+<!--l. 40--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-70001"></a>Vibrato</h3>
+<!--l. 42--><p class="noindent" >Vibrato is an expressive musical device that is created by slowly oscillating the pitch being played
+(<a 
+href="http://en.wikipedia.org/wiki/Theremin" >Theremin</a> virtuoso <a 
+href="http://en.wikipedia.org/wiki/Clara_Rockmore" >Clara Rockmore</a> (1911-98) was famous for her beautiful vibrato). Of course, you can
+add vibrato by simply shaking the part of the Gametrak that controls the frequency of our Theremin, but
+since it takes many years of practice to be able to control smooth, even vibrato, we&#8217;ll extend our patch to
+do it for us.
+<!--l. 49--><p class="indent" >   The  [vib~ ]  object takes two parameters (see the help file for a demonstration): <a 
+ id="x1-7001r1"></a>(1)&#x00A0;the frequency in Hz
+around which the output will oscillate (left inlet), and <a 
+ id="x1-7002r2"></a>(2)&#x00A0;a parameter between 0&#8211;1 that controls both the
+speed and depth of the oscillation (right inlet).
+<!--l. 56--><p class="indent" >   We&#8217;ll wire the  [vib~ ]  object in between the [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#scale" >scale</a>&#x00A0;] and  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#cycle~" >cycle</a>~&#x00A0;]  objects and control the speed and depth
+of the oscillation using the Gametrak.
+<!--l. 60--><p class="indent" >
+     <dl class="enumerate"><dt class="enumerate">
+   1. </dt><dd 
+class="enumerate">Disconnect the  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#cycle~" >cycle</a>~&#x00A0;]  object from the  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#gain~" >gain</a>~&#x00A0;]  object.
+     </dd><dt class="enumerate">
+   2. </dt><dd 
+class="enumerate">Connect the outlet of the [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#scale" >scale</a>&#x00A0;] object to the left inlet of the  [vib~ ]  object.
+                                                                                         
+                                                                                         
+     </dd><dt class="enumerate">
+   3. </dt><dd 
+class="enumerate">Connect the outlet of the  [vib~ ]  object to the left inlet of the  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#cycle~" >cycle</a>~&#x00A0;]  object.
+     </dd><dt class="enumerate">
+   4. </dt><dd 
+class="enumerate">Connect the outlet of the  [cycle\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}~ ]  object to the left inlet of the  [*~ ]  object.
+     </dd><dt class="enumerate">
+   5. </dt><dd 
+class="enumerate">Now connect the /y value of the left [o.route&#x00A0;/x /y /z] object to the right inlet of the   [vib~ ]
+     object. Even though the controller is sending out values between -1&#8211;1, we don&#8217;t have to change
+     anything because the  [vib~ ]  object takes the absolute value of the parameters that enter through
+     the right inlet.
+     <!--l. 68--><p class="noindent" ><div style="text-align: center;"><img src="images/vib.png" width=400></div>
+     </dd></dl>
+<!--l. 93--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-80002"></a>Polyphony</h3>
+<!--l. 95--><p class="noindent" >Now our Theremin has three parameters that we are controlling with the Gametrak, but we&#8217;re not making
+very efficient use of our controller. In this section, we&#8217;ll remap the three parameters of the Theremin
+to the left joystick and make a copy of the instrument that we can control with the right
+joystick.
+<!--l. 100--><p class="indent" >
+     <dl class="enumerate"><dt class="enumerate">
+   1. </dt><dd 
+class="enumerate">Rewire your patch so that the /x, /y, and /z parameters of the left joystick control the
+     frequency, gain, and vibrato as follows:
+     <div class="center" 
+>
+<!--l. 103--><p class="noindent" >
+<div class="tabular"> <table id="TBL-2" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1"></colgroup><colgroup id="TBL-2-2g"><col 
+id="TBL-2-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-1"  
+class="td11">Gametrak parameter</td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-2"  
+class="td11">Theremin parameter</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-1"  
+class="td11">/x                         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-2"  
+class="td11">frequency              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-1"  
+class="td11">/y                         </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-2"  
+class="td11">vibrato                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-1"  
+class="td11">/z                          </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-2"  
+class="td11">gain                      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-1"  
+class="td11">                  </td>
+</tr></table></div></div>
+     <!--l. 118--><p class="noindent" >Since we had been controlling the frequency with the /z parameter which has a range of 0&#8211;1 and we
+     will now be controlling the frequency with the /x parameter which has a range of -1&#8211;1,
+     we will need to change the arguments of the [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#scale" >scale</a>&#x00A0;] object so that the first two are
+     -1&#8211;1.
+     </dd><dt class="enumerate">
+   2. </dt><dd 
+class="enumerate">Now make a copy of all of the objects between the bottom [o.route&#x00A0;/x /y /z] object and the  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#gain~" >gain</a>~&#x00A0;]
+     object.
+     <!--l. 126--><p class="noindent" ><div style="text-align: center;"><img src="images/copy.png" width=400></div>
+                                                                                         
+                                                                                         
+     </dd><dt class="enumerate">
+   3. </dt><dd 
+class="enumerate">Wire up the copy so that the right joystick controls the three parameters of the second voice the
+     same way that the left one does.
+     </dd></dl>
+<!--l. 133--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-90003"></a>Brightness</h3>
+<!--l. 135--><p class="noindent" >We can improve our Theremin increasing the brightness of the tone as the volume increases. Increased
+brightness occurs when harmonics are added to our sine wave, which we can do by gradually transforming
+our nice round sine wave into a square wave. One way to do this is to increase its amplitude and send its
+output through a  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#tanh~" >tanh</a>~&#x00A0;]  object. See the file called brightness.maxpat in the demos folder for a
+demonstration of how this works.
+<!--l. 142--><p class="indent" >
+     <dl class="enumerate"><dt class="enumerate">
+   1. </dt><dd 
+class="enumerate">Start wiring a  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#tanh~" >tanh</a>~&#x00A0;]  object between the  [*~ ]  ( [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#times~" >times</a>~&#x00A0;] ) object and the  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#gain~" >gain</a>~&#x00A0;]  object for
+     the left voice.
+     </dd><dt class="enumerate">
+   2. </dt><dd 
+class="enumerate">Now we want the /z parameter from the Gametrak that is controlling the volume to have a
+     greater range so that the signal saturates. Multiply the /z parameter by 4.
+     <!--l. 149--><p class="noindent" ><div style="text-align: center;"><img src="images/tanh.png" width=400></div>
+     </dd></dl>
+<!--l. 153--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">4   </span> <a 
+ id="x1-100004"></a>Abstraction</h3>
+<!--l. 155--><p class="noindent" >We would now like to apply the change that we&#8217;ve made to the left joystick (part <a 
+href="#x1-90003">3<!--tex4ht:ref: brightness --></a> of today&#8217;s lab) to the
+right joystick. There are at least two ways to implement this change for the second voice that we want to
+avoid: <a 
+ id="x1-10001r1"></a>(1)&#x00A0;we can simply repeat the necessary steps, or we can <a 
+ id="x1-10002r2"></a>(2)&#x00A0;delete the right side and copy the
+objects from the left and rewire them.
+<!--l. 164--><p class="indent" >   While neither of these scenarios may seem like a problem, try to imagine what it would be like if your
+patch contained 20 voices each with 20 objects. As we continue to copy and paste groups of objects that
+represent some sort of functionality, we quickly run into the need to <span 
+class="cmti-10x-x-109">abstract </span>that functionality in a way
+that would allow us to make the change to one part of the patch and have that change propagate through
+all <span 
+class="cmti-10x-x-109">instances </span>of that abstraction.
+<!--l. 173--><p class="indent" >
+     <dl class="enumerate"><dt class="enumerate">
+   1. </dt><dd 
+class="enumerate">Select the objects in the left part of the patch that represent the Theremin voice (starting
+     with [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#scale" >scale</a>&#x00A0;] and including  [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#tanh~" >tanh</a>~&#x00A0;] ).
+                                                                                         
+                                                                                         
+     </dd><dt class="enumerate">
+   2. </dt><dd 
+class="enumerate">Under the &#8220;Edit&#8221; menu, choose &#8220;Encapsulate.&#8221;
+     <!--l. 178--><p class="noindent" ><div style="text-align: center;"><img src="images/encapsulate_menu.png" width=600></div>
+     <!--l. 180--><p class="noindent" >The objects that you had selected have now been encapsulated in an object called [p&#x00A0;], which
+     is short for [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#patcher" >patcher</a>&#x00A0;]. We call this object a &#8220;subpatch&#8221; or a &#8220;subpatcher.&#8221;
+     <!--l. 183--><p class="noindent" ><div style="text-align: center;"><img src="images/subpatch.png" width=400></div>
+     </dd><dt class="enumerate">
+   3. </dt><dd 
+class="enumerate">Double-click on the [p&#x00A0;] object that was just created. You will see a window that contains all
+     of the objects that you had selected still wired up in the same way.
+     </dd><dt class="enumerate">
+   4. </dt><dd 
+class="enumerate">Now save a copy of that new patch (by choosing &#8220;Save As...&#8221; from under the &#8220;Edit&#8221; menu).
+     Save it in the directory for today&#8217;s lab&#8212;the same directory where the main Max patch you
+     are editing is. You can call it anything you like (maybe Theremin.maxpat would be a good
+     choice...).
+     </dd><dt class="enumerate">
+   5. </dt><dd 
+class="enumerate">Now close the subpatch window and, back in the main patch, replace the [p] object with the
+     name of the patch you just saved, omitting the .maxpat extension. So, if you saved your patch
+     with the title Theremin.maxpat, you should make an object called [Theremin&#x00A0;].
+     <!--l. 197--><p class="noindent" ><div style="text-align: center;"><img src="images/abstraction.png" width=400></div>
+     <!--l. 199--><p class="noindent" >There is no need to rewire your patch&#8212;since the subpatch and the abstraction you just made
+     have the same number of inlets and outlets, Max will simply replace the subpatch with your
+     [Theremin&#x00A0;] abstraction, keeping the connections in tact.
+     </dd><dt class="enumerate">
+   6. </dt><dd 
+class="enumerate">Now, make a copy of the [Theremin&#x00A0;] abstraction in the patch and replace the objects that
+     constitute the second voice with the [Theremin&#x00A0;].
+     <!--l. 207--><p class="noindent" ><div style="text-align: center;"><img src="images/polyphony.png" width=400></div>
+     </dd></dl>
+<!--l. 211--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">5   </span> <a 
+ id="x1-110005"></a>Parameters</h3>
+<!--l. 213--><p class="noindent" >The abstraction you made in part <a 
+href="#x1-100004">4<!--tex4ht:ref: abstraction --></a> allows you to make a change to the file you saved on disk
+(Theremin.maxpat) and to have that change take effect wherever it is used. Try it:
+<!--l. 219--><p class="indent" >
+     <dl class="enumerate"><dt class="enumerate">
+   1. </dt><dd 
+class="enumerate">Open the file Theremin.maxpat on your hard drive and make a change to the parameters of
+     the [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#scale" >scale</a>&#x00A0;] object and save the patch.
+                                                                                         
+                                                                                         
+     </dd><dt class="enumerate">
+   2. </dt><dd 
+class="enumerate">Now, go back to the main patch and double click on both instances of the [Theremin&#x00A0;]
+     abstraction&#8212;you should see the changes you made.
+     <!--l. 225--><p class="noindent" >But what if we want to change the parameters of the [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#scale" >scale</a>&#x00A0;] object in the left instance of
+     the [Theremin&#x00A0;] to [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#scale" >scale</a>&#x00A0;-1. 1. 200. 1000.] and those of the right instance to [scale&#x00A0;-1. 1.
+     750. 3500.] so that we have a low and a high instrument? For this, we need to expose these
+     parameters so they can be accessed from the patch that contains the instances.
+     </dd><dt class="enumerate">
+   3. </dt><dd 
+class="enumerate">Open the Theremin.maxpat patch on the hard disk and add two inlets&#8212;you can do this by
+     creating a new object and typing &#8220;inlet&#8221; into it, or by selecting, copying and pasting two of
+     the inlets that already exist in the patch.
+     </dd><dt class="enumerate">
+   4. </dt><dd 
+class="enumerate">Now connect the left inlet you made to the fourth inlet of the [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#scale" >scale</a>&#x00A0;] object so that numbers
+     coming in through that inlet control the output minimum value, and connect the right inlet
+     you made to the fifth inlet of the [<a 
+href="http://cycling74.com/docs/max6/dynamic/c74_docs.html#scale" >scale</a>&#x00A0;] object.
+     <!--l. 239--><p class="noindent" ><div style="text-align: center;"><img src="images/five_outlets.png" width=400></div>
+     </dd><dt class="enumerate">
+   5. </dt><dd 
+class="enumerate">Save and close Theremin.maxpat. Notice that the two instances of the abstraction in the main
+     patch have been updated with two new inlets.
+     </dd><dt class="enumerate">
+   6. </dt><dd 
+class="enumerate">Now we can control the minimum and maximum frequencies that the Gametrak&#8217;s joysticks are
+     mapped to. Connect number boxes to the new inlets of [Theremin&#x00A0;] and set the frequencies
+     to 200 and 1000 for the left and 750 and 3500 for the right.
+     <!--l. 248--><p class="noindent" ><div style="text-align: center;"><img src="images/params.png" width=600></div>
+     </dd></dl>
+    
+</body></html> 
+
+                                                                                         
+
+
