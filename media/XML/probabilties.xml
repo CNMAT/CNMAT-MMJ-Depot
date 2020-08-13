@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "probabilities">
+	<slot number = "1">
+		<pattr name = "prob-slider" value = "127. 0. 35.169231 0. 94.761536 0. 0. 127." />
+	</slot>
+	<slot number = "2">
+		<pattr name = "prob-slider" value = "54.707691 0. 0. 127. 0. 73.269234 0. 50.8" />
+	</slot>
+	<slot number = "3">
+		<pattr name = "prob-slider" value = "0. 85.969231 0. 42.00769 127. 0. 71.315384 0." />
+	</slot>
+	<slot number = "4">
+		<pattr name = "prob-slider" value = "74.154366 75.859062 76.711411 76.711411 73.302017 70.744965 67.335571 65.630875" />
+	</slot>
+</pattrstorage>
+

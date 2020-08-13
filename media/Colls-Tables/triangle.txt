@@ -1,0 +1,12 @@
+1,00silence.aif;
+2,1triangle-ring.aif;
+3,1triangle-mute.aif;
+4,1triangle-halfmute.aif;
+5,2triangle-ring.aif;
+6,2triangle-mute.aif;
+7,2triangle-halfmute.aif;
+8,3triangle-ring.aif;9,3triangle-mute.aif;
+10,3triangle-halfmute.aif;11,4triangle-ring.aif;
+12,4triangle-mute.aif;13,4triangle-halfmute.aif;14,5triangle-ring.aif;15,5triangle-mute.aif;
+16,5triangle-halfmute.aif;17,6triangle-ring.aif;18,6triangle-mute.aif;
+19,6triangle-halfmute.aif;

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "8harp_tuner">
+	<slot number = "1">
+		<pattr name = "churchmodes" value = "0" />
+		<pattr name = "denominator1" value = "1" />
+		<pattr name = "denominator2" value = "9" />
+		<pattr name = "denominator3" value = "5" />
+		<pattr name = "denominator4" value = "7" />
+		<pattr name = "denominator5" value = "3" />
+		<pattr name = "denominator6" value = "5" />
+		<pattr name = "denominator7" value = "15" />
+		<pattr name = "denominator8" value = "2" />
+		<pattr name = "numerator1" value = "1" />
+		<pattr name = "numerator2" value = "8" />
+		<pattr name = "numerator3" value = "4" />
+		<pattr name = "numerator4" value = "5" />
+		<pattr name = "numerator5" value = "2" />
+		<pattr name = "numerator6" value = "3" />
+		<pattr name = "numerator7" value = "8" />
+		<pattr name = "numerator8" value = "1" />
+	</slot>
+	<slot number = "2">
+		<pattr name = "churchmodes" value = "1" />
+		<pattr name = "denominator1" value = "1" />
+		<pattr name = "denominator2" value = "9" />
+		<pattr name = "denominator3" value = "5" />
+		<pattr name = "denominator4" value = "4" />
+		<pattr name = "denominator5" value = "3" />
+		<pattr name = "denominator6" value = "5" />
+		<pattr name = "denominator7" value = "15" />
+		<pattr name = "denominator8" value = "2" />
+		<pattr name = "numerator1" value = "1" />
+		<pattr name = "numerator2" value = "8" />
+		<pattr name = "numerator3" value = "4" />
+		<pattr name = "numerator4" value = "3" />
+		<pattr name = "numerator5" value = "2" />
+		<pattr name = "numerator6" value = "3" />
+		<pattr name = "numerator7" value = "8" />
+		<pattr name = "numerator8" value = "1" />
+	</slot>
+	<slot number = "3">
+		<pattr name = "churchmodes" value = "2" />
+		<pattr name = "denominator1" value = "1" />
+		<pattr name = "denominator2" value = "9" />
+		<pattr name = "denominator3" value = "5" />
+		<pattr name = "denominator4" value = "4" />
+		<pattr name = "denominator5" value = "3" />
+		<pattr name = "denominator6" value = "5" />
+		<pattr name = "denominator7" value = "16" />
+		<pattr name = "denominator8" value = "2" />
+		<pattr name = "numerator1" value = "1" />
+		<pattr name = "numerator2" value = "8" />
+		<pattr name = "numerator3" value = "4" />
+		<pattr name = "numerator4" value = "3" />
+		<pattr name = "numerator5" value = "2" />
+		<pattr name = "numerator6" value = "3" />
+		<pattr name = "numerator7" value = "9" />
+		<pattr name = "numerator8" value = "1" />
+	</slot>
+	<slot number = "4">
+		<pattr name = "churchmodes" value = "3" />
+		<pattr name = "denominator1" value = "1" />
+		<pattr name = "denominator2" value = "9" />
+		<pattr name = "denominator3" value = "6" />
+		<pattr name = "denominator4" value = "4" />
+		<pattr name = "denominator5" value = "3" />
+		<pattr name = "denominator6" value = "5" />
+		<pattr name = "denominator7" value = "16" />
+		<pattr name = "denominator8" value = "2" />
+		<pattr name = "numerator1" value = "1" />
+		<pattr name = "numerator2" value = "8" />
+		<pattr name = "numerator3" value = "5" />
+		<pattr name = "numerator4" value = "3" />
+		<pattr name = "numerator5" value = "2" />
+		<pattr name = "numerator6" value = "3" />
+		<pattr name = "numerator7" value = "9" />
+		<pattr name = "numerator8" value = "1" />
+	</slot>
+	<slot number = "5">
+		<pattr name = "churchmodes" value = "4" />
+		<pattr name = "denominator1" value = "1" />
+		<pattr name = "denominator2" value = "9" />
+		<pattr name = "denominator3" value = "6" />
+		<pattr name = "denominator4" value = "4" />
+		<pattr name = "denominator5" value = "3" />
+		<pattr name = "denominator6" value = "8" />
+		<pattr name = "denominator7" value = "16" />
+		<pattr name = "denominator8" value = "2" />
+		<pattr name = "numerator1" value = "1" />
+		<pattr name = "numerator2" value = "8" />
+		<pattr name = "numerator3" value = "5" />
+		<pattr name = "numerator4" value = "3" />
+		<pattr name = "numerator5" value = "2" />
+		<pattr name = "numerator6" value = "5" />
+		<pattr name = "numerator7" value = "9" />
+		<pattr name = "numerator8" value = "1" />
+	</slot>
+	<slot number = "6">
+		<pattr name = "churchmodes" value = "5" />
+		<pattr name = "denominator1" value = "1" />
+		<pattr name = "denominator2" value = "16" />
+		<pattr name = "denominator3" value = "6" />
+		<pattr name = "denominator4" value = "4" />
+		<pattr name = "denominator5" value = "3" />
+		<pattr name = "denominator6" value = "8" />
+		<pattr name = "denominator7" value = "16" />
+		<pattr name = "denominator8" value = "2" />
+		<pattr name = "numerator1" value = "1" />
+		<pattr name = "numerator2" value = "15" />
+		<pattr name = "numerator3" value = "5" />
+		<pattr name = "numerator4" value = "3" />
+		<pattr name = "numerator5" value = "2" />
+		<pattr name = "numerator6" value = "5" />
+		<pattr name = "numerator7" value = "9" />
+		<pattr name = "numerator8" value = "1" />
+	</slot>
+	<slot number = "7">
+		<pattr name = "churchmodes" value = "6" />
+		<pattr name = "denominator1" value = "1" />
+		<pattr name = "denominator2" value = "16" />
+		<pattr name = "denominator3" value = "6" />
+		<pattr name = "denominator4" value = "4" />
+		<pattr name = "denominator5" value = "7" />
+		<pattr name = "denominator6" value = "8" />
+		<pattr name = "denominator7" value = "16" />
+		<pattr name = "denominator8" value = "2" />
+		<pattr name = "numerator1" value = "1" />
+		<pattr name = "numerator2" value = "15" />
+		<pattr name = "numerator3" value = "5" />
+		<pattr name = "numerator4" value = "3" />
+		<pattr name = "numerator5" value = "5" />
+		<pattr name = "numerator6" value = "5" />
+		<pattr name = "numerator7" value = "9" />
+		<pattr name = "numerator8" value = "1" />
+	</slot>
+</pattrstorage>
+
