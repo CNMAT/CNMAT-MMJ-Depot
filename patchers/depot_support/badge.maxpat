@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 1,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 5,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 446.0, 204.0, 707.0, 622.0 ],
+		"classnamespace" : "box",
+		"rect" : [ -158.0, -885.0, 707.0, 622.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,7 +37,33 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontsize" : 16.0,
+					"id" : "obj-34",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 12.0, 353.0, 765.0, 24.0 ],
+					"text" : "This object is deprecated. Please use the badge2 object in all new objects added to the depot.",
+					"textcolor" : [ 0.996078431372549, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 16.0, 267.0, 301.0, 74.0 ],
+					"text" : "This object is the badge for the depot 1.0, which included versioning of patches. The depot 2.0 release does not include versioning, so this patch was edited to not use the #2 argument. This change removes versioning from patches in the depot."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 9.0,
@@ -46,7 +73,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 409.0, 120.0, 158.0, 19.0 ],
-					"style" : "",
 					"text" : "sprintf %s and all other max patches\\,"
 				}
 
@@ -61,7 +87,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 409.0, 60.0, 176.5, 19.0 ],
-					"style" : "",
 					"text" : "unjoin 3"
 				}
 
@@ -76,7 +101,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 409.0, 28.0, 58.0, 19.0 ],
-					"style" : "",
 					"text" : "patcherargs"
 				}
 
@@ -87,12 +111,11 @@
 					"fontsize" : 9.0,
 					"id" : "obj-14",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.0, 89.0, 124.0, 19.0 ],
-					"style" : "",
-					"text" : "sprintf %s version %s by %s"
+					"patching_rect" : [ 409.0, 95.0, 75.0, 19.0 ],
+					"text" : "sprintf %s by %s"
 				}
 
 			}
@@ -116,8 +139,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7.0, 41.0, 220.0, 20.0 ],
-					"style" : "",
-					"text" : "© 2007-16 UC Regents, all rights reserved",
+					"text" : "© 2007-20 UC Regents, all rights reserved",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -142,7 +164,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 89.0, 28.0, 176.0, 20.0 ],
-					"style" : "",
 					"text" : "http://cnmat.berkeley.edu/downloads/",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -168,7 +189,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7.0, 15.0, 142.0, 20.0 ],
-					"style" : "",
 					"text" : "#1 and all other max patches,",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -194,7 +214,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7.0, 2.0, 285.0, 20.0 ],
-					"style" : "",
 					"text" : "#1 version #2 by #3",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -209,7 +228,6 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 378.0, 255.0, 57.0, 19.0 ],
-					"style" : "",
 					"text" : "uc_license"
 				}
 
@@ -223,7 +241,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 358.0, 239.0, 233.0, 17.0 ],
-					"style" : "",
 					"text" : "do not put a bpatcher with badge.pat in this patch!"
 				}
 
@@ -236,6 +253,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 85.0, 28.0, 200.0, 15.0 ]
 				}
 
@@ -250,7 +268,6 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 222.0, 47.0, 63.0, 20.0 ],
-					"style" : "",
 					"text" : "uc_license"
 				}
 
@@ -266,8 +283,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 145.333328, 150.0, 316.0, 29.0 ],
-					"style" : "",
+					"patching_rect" : [ 145.333327999999995, 150.0, 316.0, 29.0 ],
 					"text" : ";\rmax launch_browser http://cnmat.berkeley.edu/library/max_msp_jitter_depot"
 				}
 
@@ -281,7 +297,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 358.0, 224.0, 217.0, 17.0 ],
-					"style" : "",
 					"text" : "badge version 3.0alpha by Michael Zbyszynski"
 				}
 
@@ -307,7 +322,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 7.0, 28.0, 82.0, 20.0 ],
-					"style" : "",
 					"text" : "can be found at:",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -317,8 +331,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -326,7 +338,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-13", 1 ]
 				}
@@ -335,7 +346,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 1 ],
-					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-14", 0 ]
 				}
@@ -343,27 +353,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"destination" : [ "obj-14", 1 ],
 					"source" : [ "obj-2", 2 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -371,8 +369,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -380,7 +377,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 1 ],
-					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
@@ -389,13 +385,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "uc_license.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/patchers/depot_support",
+				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2.0/patchers/depot_support",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cnmat_blue.gif",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/media/Images",
+				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2.0/media/Images",
+				"patcherrelativepath" : "../../media/Images",
 				"type" : "GIFf",
 				"implicit" : 1
 			}
