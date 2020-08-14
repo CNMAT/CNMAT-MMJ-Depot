@@ -1,7 +1,7 @@
 import os
 
 # given a folder of files, this script changes the extensions of all files with a given extension
-# it does NOT make a copy of the files, it changes them in place
+# it does NOT make a copy of the files, it changes them in place, so be careful
 # it can also prepend a string to the beginning of every file it edits
 # if you want a string to be prepended, edit the 'special_char' variable, else leave it as an empty string
 # Luke Dzwonczyk 2020
@@ -9,7 +9,7 @@ import os
 ### YOU MUST SET THE FOLLOWING FOUR VARIABLES
 
 # path to folder of files you want to change
-folder_path = "test"
+folder_path = ""
 
 # extension that you want to change from
 curr_ext = ".maxhelp"
