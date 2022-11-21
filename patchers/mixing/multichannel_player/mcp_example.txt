@@ -1,0 +1,8 @@
+1, bass.aif;
+2, bird.aif;
+3, bowl1.wav;
+4, burning.aif;
+5, eroica.aif;
+6, falls.aif;
+7, gbell.aif;
+8, gsax.aif;

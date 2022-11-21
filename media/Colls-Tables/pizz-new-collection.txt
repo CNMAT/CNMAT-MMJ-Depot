@@ -1,0 +1,1 @@
+36, 48_pizz_fo_c2.aif 0;37, 52_pizz_fo_e2.aif 0;38, 56_g_pizz_fo_gs2.aif 0;39, 62_pizz_fo_d3.aif 0;40, 65_pizz_fo_f3.aif 0;41, 69_pizz_fo_a3.aif 0;42, 73_pizz_fo_cS4.aif 0;43, 76_pizz_fo_e4.aif 0;44, 79_pizz_fo_g4.aif 0;45, 82_pizz_fo_aS4.aif 0;46, 85_pizz_fo_cS5.aif 0;47, 88_pizz_fo_e5.aif 0;
