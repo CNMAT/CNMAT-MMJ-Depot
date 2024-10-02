@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 10,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -48,6 +48,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "badge.maxpat",
 					"numinlets" : 0,
@@ -60,7 +61,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "simple_karplus-strong", "Very simple demonstration of the Karplus-Strong algorithm.", "0.296 0.594 0.784 1." ],
+					"args" : [ "karplus-strong_simple", "Very simple demonstration of the Karplus-Strong algorithm.", "0.296 0.594 0.784 1." ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -68,6 +69,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "banner.maxpat",
 					"numinlets" : 0,
@@ -350,45 +352,45 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "karplus-strong_simple.maxpat",
-				"bootpath" : "~/Dropbox/My Mac (CNMATs-MacBook-Pro.local)/Documents/Max 8/Packages/CNMAT-MMJ-Depot-F201-EC-IMRAN/patchers/synthesis/synthesis_other",
-				"patcherrelativepath" : "../../../patchers/synthesis/synthesis_other",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "banner.maxpat",
-				"bootpath" : "~/Dropbox/My Mac (CNMATs-MacBook-Pro.local)/Documents/Max 8/Packages/CNMAT-MMJ-Depot-F201-EC-IMRAN/patchers/Z_depot_support",
-				"patcherrelativepath" : "../../../patchers/Z_depot_support",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CNMAT_logo.png",
-				"bootpath" : "~/Dropbox/My Mac (CNMATs-MacBook-Pro.local)/Documents/Max 8/Packages/CNMAT-MMJ-Depot-F201-EC-IMRAN/media/Images",
-				"patcherrelativepath" : "../../../media/Images",
+				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/media/Images",
+				"patcherrelativepath" : "../../media/Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "badge.maxpat",
-				"bootpath" : "~/Dropbox/My Mac (CNMATs-MacBook-Pro.local)/Documents/Max 8/Packages/CNMAT-MMJ-Depot-F201-EC-IMRAN/patchers/Z_depot_support",
-				"patcherrelativepath" : "../../../patchers/Z_depot_support",
+				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/Z_depot_support",
+				"patcherrelativepath" : "../../patchers/Z_depot_support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "uc_license.maxpat",
-				"bootpath" : "~/Dropbox/My Mac (CNMATs-MacBook-Pro.local)/Documents/Max 8/Packages/CNMAT-MMJ-Depot-F201-EC-IMRAN/patchers/Z_depot_support",
-				"patcherrelativepath" : "../../../patchers/Z_depot_support",
+				"name" : "banner.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/Z_depot_support",
+				"patcherrelativepath" : "../../patchers/Z_depot_support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cnmat_blue.gif",
-				"bootpath" : "~/Dropbox/My Mac (CNMATs-MacBook-Pro.local)/Documents/Max 8/Packages/CNMAT-MMJ-Depot-F201-EC-IMRAN/media/Images",
-				"patcherrelativepath" : "../../../media/Images",
+				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/media/Images",
+				"patcherrelativepath" : "../../media/Images",
 				"type" : "GIFf",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "karplus-strong_simple.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/synthesis/karplus-strong",
+				"patcherrelativepath" : "../../patchers/synthesis/karplus-strong",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "uc_license.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/Z_depot_support",
+				"patcherrelativepath" : "../../patchers/Z_depot_support",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],

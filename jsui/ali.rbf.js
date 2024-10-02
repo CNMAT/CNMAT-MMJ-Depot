@@ -4,11 +4,11 @@
 // please refer interested parties to the author: adrian@cnmat.berkeley.edu and ali@umn.edu
 // Adrian Freed Copyright 2005 UC Regents. All Rights Reserved
 // Ali Momeni Copyright 2009.
+// Jon Kulpa            2023 edit: remove points in GUI
 //
 //ToDo:
 //next minor release
-// delete function in GUI?
-// osc output bundles, GUI Delete and add, GUI for height change
+// osc output bundles, GUI for height change
 //  these need next max/msp release features: patr , cursors
 // speed up using QUAD meshes.
 //asychronous background drawing
@@ -468,7 +468,7 @@ function addgaussian(s,x,y)
 	var  t = new basis(x,y);
 	t.name=s;
 	bases[s]=t;
-	//bases.push(t)
+	// bases.push(t)
 	newbg=1;
 	draw();
 }
@@ -786,24 +786,46 @@ var lastclicked=null;
 var move=0;
 
 //added by ali for double click adding of points
+//added by jon for double click removal of points
 function ondblclick(x,y,but,mod1,shift,caps,opt,mod2)
 {
 	var cx=sketch.screentoworld(x,y)[0];
 	var cy=sketch.screentoworld(x,y)[1];
 	
-	if (shift == 1) {
-	// post("adding number: ", points.length);
-		var newname = (countbases() + 1)+".";
-		post("now adding a gaussian", newname,cx,cy, "\n");
-		addgaussian(newname,cx,cy); 
-	// post("now we have: ", points.length);
+	if( shift == 1 )
+    {
+		if( opt == 0 )
+		{
+			// post("adding number: ", points.length);
+			var newname = (countbases() + 1)+".";
+			post("now adding a gaussian", newname,cx,cy, "\n");
+			addgaussian(newname,cx,cy); 
+			// post("now we have: ", points.length);
+		}
+		else
+		{
+			mxin = sketch.screentoworld(x,y)[0];
+ 			myin = sketch.screentoworld(x,y)[1];
+
+			for( var j in bases )
+			{
+				var o = bases[j];
+				x = mxin-o.ux;
+				y = myin-o.uy;
+				var l=Math.sqrt(x*x+y*y);
 		
-	//draw();
+				if( l < 0.1 )
+				{
+					remove( j );
+					break;
+				}
+		}
+		}
+
 	}
 
-	if (shift == 1 && opt == 1) {
-	//remove it
-	}
+		
+	draw();
 }	 
 
 
@@ -813,7 +835,7 @@ function onclick(x,y,but,cmd,shift,capslock,option,ctrl)
 
 	mxin = sketch.screentoworld(x,y)[0];
  	myin = sketch.screentoworld(x,y)[1];
-	if(shift)
+	if( shift )
 	{
 		var x,y;
 		lastclicked = null;

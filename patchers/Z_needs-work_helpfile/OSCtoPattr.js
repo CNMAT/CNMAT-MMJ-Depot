@@ -1,1 +1,0 @@
-//Peter Nyboer made this. - mzedfunction anything(){	var inp = messagename.split("/");	var outp = inp.slice(1,inp.length);	outlet(0,outp.join("::"),arguments[0]);}
