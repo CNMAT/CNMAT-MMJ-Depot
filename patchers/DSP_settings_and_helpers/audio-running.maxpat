@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 90.0, 65.0, 150.0, 20.0 ],
+					"text" : "install this in a bpatcher"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-2",
 					"linecount" : 3,
@@ -81,8 +92,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
