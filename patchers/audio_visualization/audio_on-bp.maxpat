@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 50.0, 50.0 ],
+		"rect" : [ 59.0, 104.0, 323.0, 117.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 48.0, 32.0, 263.0, 47.0 ],
+					"text" : "This visualization lives inside a bpatcher. Copy and paste into your patch to verify that that the DAC is ON (live performance security)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 48.0, -3.0, 263.0, 33.0 ],
+					"text" : "displays a visual wave indicator to shows \naudio is running when DAC is ON"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.203921568627451, 0.105882352941176, 0.137254901960784, 1.0 ],
 					"bufsize" : 64,
 					"calccount" : 64,
@@ -49,7 +73,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.25, 0.0, 30.0, 15.0 ],
+					"patching_rect" : [ 0.25, 0.0, 21.0, 14.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 76.5, 142.0, 19.5, 16.0 ]
 				}
@@ -69,8 +93,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -162,7 +186,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 5.25, 4.0, 58.0, 22.0 ],
+					"patching_rect" : [ 0.25, 57.0, 58.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
