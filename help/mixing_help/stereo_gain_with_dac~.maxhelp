@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 541.0, 523.0 ],
+		"rect" : [ 134.0, 172.0, 541.0, 523.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 11.0,
@@ -158,7 +158,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "stereo-gain+dac~.maxpat",
+					"name" : "stereo_gain_with_dac~.maxpat",
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -244,20 +244,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-51", 1 ],
-					"source" : [ "obj-1", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-51", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -272,20 +258,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-51", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -293,44 +265,44 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "banner.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2_032222/patchers/Z_depot_support",
-				"patcherrelativepath" : "../Z_depot_support",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CNMAT_logo.png",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2_032222/media/Images",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
 				"patcherrelativepath" : "../../media/Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "badge.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2_032222/patchers/Z_depot_support",
-				"patcherrelativepath" : "../Z_depot_support",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
+				"patcherrelativepath" : "../../patchers/Z_depot_support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "uc_license.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2_032222/patchers/Z_depot_support",
-				"patcherrelativepath" : "../Z_depot_support",
+				"name" : "banner.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
+				"patcherrelativepath" : "../../patchers/Z_depot_support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cnmat_blue.gif",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2_032222/media/Images",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
 				"patcherrelativepath" : "../../media/Images",
 				"type" : "GIFf",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "stereo-gain+dac~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2_032222/patchers/utilities",
-				"patcherrelativepath" : ".",
+				"name" : "stereo_gain_with_dac~.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/mixing",
+				"patcherrelativepath" : "../../patchers/mixing",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "uc_license.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
+				"patcherrelativepath" : "../../patchers/Z_depot_support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
