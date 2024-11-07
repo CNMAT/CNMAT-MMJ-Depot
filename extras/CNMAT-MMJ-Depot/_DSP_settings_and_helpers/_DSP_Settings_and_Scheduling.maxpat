@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 10,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 86.0, 79.0, 656.0, 765.0 ],
+		"rect" : [ 134.0, 172.0, 656.0, 765.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -48,8 +48,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -528,6 +528,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "badge.maxpat",
 					"numinlets" : 0,
@@ -591,8 +592,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -932,8 +933,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1284,8 +1285,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 6,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1688,8 +1689,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 6,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2149,8 +2150,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 6,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2500,8 +2501,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 10,
+															"minor" : 6,
+															"revision" : 5,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3485,8 +3486,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 10,
+															"minor" : 6,
+															"revision" : 5,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -4725,8 +4726,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 10,
+															"minor" : 6,
+															"revision" : 5,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -5756,8 +5757,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 10,
+															"minor" : 6,
+															"revision" : 5,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -7273,7 +7274,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-77",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7289,7 +7290,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-78",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7305,7 +7306,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-79",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7321,7 +7322,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-80",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7337,7 +7338,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-81",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7353,7 +7354,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-82",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7369,7 +7370,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-83",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7385,7 +7386,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-84",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7401,7 +7402,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-85",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7417,7 +7418,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-86",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7433,7 +7434,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-87",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7449,7 +7450,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-88",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7465,7 +7466,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-89",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7481,7 +7482,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-90",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7497,7 +7498,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-91",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -7513,7 +7514,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-92",
-													"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+													"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -9291,7 +9292,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 9.0,
 									"id" : "obj-54",
-									"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+									"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -9350,7 +9351,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 9.0,
 									"id" : "obj-58",
-									"items" : [ "Off", ",", 1, "1", ",", 2, "Output 2" ],
+									"items" : [ "Off", ",", 1, "Multiple Outputs (USB) 1", ",", 2, "Multiple Outputs (USB) 2", ",", 3, "Mix In 3", ",", 4, "Mix In 4", ",", 5, "Mix In 5", ",", 6, "Mix In 6", ",", 7, "Mix In 7", ",", 8, "Mix In 8", ",", 9, "Out 9", ",", 10, "Out 10" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10663,7 +10664,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 9.0,
 									"id" : "obj-146",
-									"items" : [ "None", ",", "DisplayPort", ",", "MacBook Pro Speakers", ",", "CAMP1248", ",", "ZoomAudioDevice" ],
+									"items" : [ "None", ",", "LG ULTRAWIDE", ",", "MacBook Pro Speakers", ",", "BoomAudio", ",", "Microsoft Teams Audio", ",", "Pro Tools Audio Bridge 16", ",", "Pro Tools Audio Bridge 2-A", ",", "Pro Tools Audio Bridge 2-B", ",", "Pro Tools Audio Bridge 32", ",", "Pro Tools Audio Bridge 64", ",", "Pro Tools Audio Bridge 6", ",", "Pro Tools Aggregate I/O", ",", "CAMP1248", ",", "ZoomAudioDevice" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10694,7 +10695,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 9.0,
 									"id" : "obj-148",
-									"items" : [ "None", ",", "Live Streamer CAM313 Microphone", ",", "MacBook Pro Microphone", ",", "CAMP1248", ",", "ZoomAudioDevice" ],
+									"items" : [ "None", ",", "MacBook Pro Microphone", ",", "BoomAudio", ",", "Microsoft Teams Audio", ",", "Pro Tools Audio Bridge 16", ",", "Pro Tools Audio Bridge 2-A", ",", "Pro Tools Audio Bridge 2-B", ",", "Pro Tools Audio Bridge 32", ",", "Pro Tools Audio Bridge 64", ",", "Pro Tools Audio Bridge 6", ",", "Pro Tools Aggregate I/O", ",", "CAMP1248", ",", "ZoomAudioDevice" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10725,7 +10726,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 9.0,
 									"id" : "obj-150",
-									"items" : [ "None", ",", "Core Audio", ",", "NonRealTime", ",", "ad_portaudio", "Core Audio", ",", "ad_rewire" ],
+									"items" : [ "None", ",", "Core Audio", ",", "NonRealTime", ",", "ad_portaudio", "Core Audio" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -11776,14 +11777,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 80.0, 79.0, 713.0, 749.0 ],
+						"rect" : [ 134.0, 172.0, 713.0, 749.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -11837,14 +11838,14 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 6,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 10.0, 59.0, 851.0, 440.0 ],
+										"rect" : [ 134.0, 172.0, 851.0, 440.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -11874,6 +11875,36 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"channels" : 1,
+													"id" : "obj-29",
+													"lastchannelcount" : 0,
+													"maxclass" : "live.gain~",
+													"numinlets" : 1,
+													"numoutlets" : 4,
+													"outlettype" : [ "signal", "", "float", "list" ],
+													"parameter_enable" : 1,
+													"patching_rect" : [ 299.0, 119.0, 52.0, 50.0 ],
+													"saved_attribute_attributes" : 													{
+														"valueof" : 														{
+															"parameter_initial" : [ -65 ],
+															"parameter_initial_enable" : 1,
+															"parameter_longname" : "live.gain~",
+															"parameter_mmax" : 6.0,
+															"parameter_mmin" : -70.0,
+															"parameter_modmode" : 3,
+															"parameter_shortname" : "live.gain~",
+															"parameter_type" : 0,
+															"parameter_unitstyle" : 4
+														}
+
+													}
+,
+													"varname" : "live.gain~"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"fontname" : "Arial",
 													"fontsize" : 9.0,
 													"id" : "obj-1",
@@ -11894,7 +11925,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 537.0, 270.0, 134.0, 17.0 ],
+													"patching_rect" : [ 537.0, 270.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -11908,7 +11939,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 537.0, 248.0, 134.0, 17.0 ],
+													"patching_rect" : [ 537.0, 248.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -11922,7 +11953,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 537.0, 227.0, 134.0, 17.0 ],
+													"patching_rect" : [ 537.0, 227.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -11936,7 +11967,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 537.0, 205.0, 134.0, 17.0 ],
+													"patching_rect" : [ 537.0, 205.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -11950,7 +11981,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 537.0, 183.0, 134.0, 17.0 ],
+													"patching_rect" : [ 537.0, 183.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -11964,7 +11995,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 537.0, 161.0, 134.0, 17.0 ],
+													"patching_rect" : [ 537.0, 161.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -11978,7 +12009,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 537.0, 140.0, 134.0, 17.0 ],
+													"patching_rect" : [ 537.0, 140.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -11992,7 +12023,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 537.0, 118.0, 134.0, 17.0 ],
+													"patching_rect" : [ 537.0, 118.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -12006,7 +12037,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 399.0, 184.0, 134.0, 17.0 ],
+													"patching_rect" : [ 399.0, 184.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -12020,7 +12051,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 399.0, 162.0, 134.0, 17.0 ],
+													"patching_rect" : [ 399.0, 162.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -12034,7 +12065,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 399.0, 141.0, 134.0, 17.0 ],
+													"patching_rect" : [ 399.0, 141.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -12048,7 +12079,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 399.0, 119.0, 134.0, 17.0 ],
+													"patching_rect" : [ 399.0, 119.0, 134.0, 19.0 ],
 													"text" : "expr sqrt(pow($f1\\,1.45))"
 												}
 
@@ -12062,7 +12093,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 3,
 													"outlettype" : [ "bang", "bang", "int" ],
-													"patching_rect" : [ 353.0, 94.0, 57.0, 17.0 ],
+													"patching_rect" : [ 353.0, 94.0, 57.0, 19.0 ],
 													"text" : "Uzi 10000"
 												}
 
@@ -12076,7 +12107,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 271.0, 90.0, 41.0, 17.0 ],
+													"patching_rect" : [ 271.0, 90.0, 41.0, 19.0 ],
 													"text" : "*~ 0.1"
 												}
 
@@ -12090,7 +12121,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 271.0, 70.0, 64.0, 17.0 ],
+													"patching_rect" : [ 271.0, 70.0, 64.0, 19.0 ],
 													"text" : "cycle~ 532."
 												}
 
@@ -12104,7 +12135,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 237.0, 52.0, 67.0, 15.0 ],
+													"patching_rect" : [ 237.0, 52.0, 67.0, 19.0 ],
 													"text" : "startwindow"
 												}
 
@@ -12133,7 +12164,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 119.0, 293.0, 82.0, 55.0 ],
+													"patching_rect" : [ 119.0, 293.0, 82.0, 59.0 ],
 													"text" : ";\rmax preempt 1;\rdsp takeover 0;\rdsp sigvs 64;\rdsp iovs 64"
 												}
 
@@ -12171,7 +12202,7 @@
 													"maxclass" : "ezdac~",
 													"numinlets" : 2,
 													"numoutlets" : 0,
-													"patching_rect" : [ 237.0, 122.0, 33.0, 33.0 ]
+													"patching_rect" : [ 237.0, 179.0, 33.0, 33.0 ]
 												}
 
 											}
@@ -12197,7 +12228,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 353.0, 72.0, 64.0, 17.0 ],
+													"patching_rect" : [ 353.0, 72.0, 64.0, 19.0 ],
 													"text" : "metro 1000"
 												}
 
@@ -12237,7 +12268,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 103.0, 53.0, 82.0, 55.0 ],
+													"patching_rect" : [ 103.0, 53.0, 82.0, 59.0 ],
 													"text" : ";\rmax preempt 1;\rdsp takeover 1;\rdsp sigvs 64;\rdsp iovs 64"
 												}
 
@@ -12293,16 +12324,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-22", 1 ],
-													"order" : 0,
-													"source" : [ "obj-15", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-22", 0 ],
-													"order" : 1,
+													"destination" : [ "obj-29", 0 ],
 													"source" : [ "obj-15", 0 ]
 												}
 
@@ -12332,6 +12354,20 @@
 												"patchline" : 												{
 													"destination" : [ "obj-24", 0 ],
 													"source" : [ "obj-25", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-22", 1 ],
+													"source" : [ "obj-29", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-22", 0 ],
+													"source" : [ "obj-29", 0 ]
 												}
 
 											}
@@ -12411,8 +12447,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 6,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -13690,8 +13726,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -14000,8 +14036,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -14403,32 +14439,46 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-17::obj-2::obj-29" : [ "live.gain~", "live.gain~", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [ 			{
-				"name" : "cnmat_wht-trans.png",
-				"bootpath" : "~/Dropbox/My Mac (CNMATs-MacBook-Pro.local)/Documents/Max 8/Packages/CNMAT-MMJ-Depot-rebuilt_08082021/media/Images",
-				"patcherrelativepath" : "../../media/Images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "badge.maxpat",
-				"bootpath" : "~/Dropbox/My Mac (CNMATs-MacBook-Pro.local)/Documents/Max 8/Packages/CNMAT-MMJ-Depot-rebuilt_08082021/patchers/Z_depot_support",
-				"patcherrelativepath" : "../Z_depot_support",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "uc_license.maxpat",
-				"bootpath" : "~/Dropbox/My Mac (CNMATs-MacBook-Pro.local)/Documents/Max 8/Packages/CNMAT-MMJ-Depot-rebuilt_08082021/patchers/Z_depot_support",
-				"patcherrelativepath" : "../Z_depot_support",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
+				"patcherrelativepath" : "../../../patchers/Z_depot_support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cnmat_blue.gif",
-				"bootpath" : "~/Dropbox/My Mac (CNMATs-MacBook-Pro.local)/Documents/Max 8/Packages/CNMAT-MMJ-Depot-rebuilt_08082021/media/Images",
-				"patcherrelativepath" : "../../media/Images",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
+				"patcherrelativepath" : "../../../media/Images",
 				"type" : "GIFf",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cnmat_wht-trans.png",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
+				"patcherrelativepath" : "../../../media/Images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "uc_license.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
+				"patcherrelativepath" : "../../../patchers/Z_depot_support",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],

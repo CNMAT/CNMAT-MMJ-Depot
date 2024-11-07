@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 959.0, 281.0, 505.0, 418.0 ],
+		"rect" : [ 690.0, 254.0, 505.0, 418.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 109.0, 201.0, 39.0, 22.0 ],
-					"text" : "$1 50"
+					"text" : "$1 10"
 				}
 
 			}
@@ -70,7 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 172.0, 194.0, 39.0, 22.0 ],
-					"text" : "$1 50"
+					"text" : "$1 10"
 				}
 
 			}
@@ -178,8 +178,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "FullPacket" ],
-					"patching_rect" : [ 109.0, 136.0, 147.0, 19.0 ],
-					"text" : "o.route /rate /depth"
+					"patching_rect" : [ 109.0, 136.0, 141.0, 19.0 ],
+					"text" : "o.route /freq_speed /+-freq_width"
 				}
 
 			}
@@ -205,8 +205,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 47.0, 337.0, 58.0, 19.0 ],
-					"text" : "tapout~ 150"
+					"patching_rect" : [ 47.0, 337.0, 51.0, 19.0 ],
+					"text" : "tapout~ 50"
 				}
 
 			}
@@ -220,8 +220,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "tapconnect" ],
-					"patching_rect" : [ 47.0, 301.0, 55.0, 19.0 ],
-					"text" : "tapin~ 150"
+					"patching_rect" : [ 47.0, 301.0, 46.0, 19.0 ],
+					"text" : "tapin~ 50"
 				}
 
 			}
@@ -248,8 +248,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 110.0, 307.0, 34.0, 19.0 ],
-					"text" : "+~ 75"
+					"patching_rect" : [ 110.0, 307.0, 32.0, 19.0 ],
+					"text" : "+~ 25"
 				}
 
 			}
