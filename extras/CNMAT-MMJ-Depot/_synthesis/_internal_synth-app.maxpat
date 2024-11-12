@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 48.0, 103.0, 992.0, 696.0 ],
+		"rect" : [ 64.0, 100.0, 992.0, 696.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -9096,7 +9096,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-18",
@@ -9238,7 +9237,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 51.0, 333.0, 196.0, 22.0 ],
-									"text" : "/isynth/chan1/note 105 0"
+									"text" : "/isynth/chan1/note 68 0"
 								}
 
 							}

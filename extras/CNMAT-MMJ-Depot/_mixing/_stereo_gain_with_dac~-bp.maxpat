@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,6 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
+		"enabletransparentbgwithtitlebar" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
@@ -51,8 +52,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -323,18 +324,18 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"bufsize" : 64,
 					"calccount" : 64,
-					"fgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"gridcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"fgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"gridcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"id" : "obj-40",
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 281.75, 157.0, 34.25, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 76.5, 142.0, 19.5, 16.0 ]
+					"presentation_rect" : [ 72.0, 142.0, 19.5, 16.0 ]
 				}
 
 			}
@@ -351,8 +352,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -533,12 +534,12 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.79,
 					"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgfillcolor_color1" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"bgfillcolor_color2" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor_color1" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"bgfillcolor_color2" : [ 0.0, 1.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
 					"fontname" : "Arial",
@@ -552,7 +553,7 @@
 					"patching_rect" : [ 374.5, 153.0, 60.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 142.0, 65.0, 19.0 ],
-					"text" : "audio off",
+					"text" : "audio on",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -989,7 +990,9 @@
 			}
  ],
 		"dependency_cache" : [  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+		"editing_bgcolor" : [ 0.945098039215686, 0.933333333333333, 0.933333333333333, 1.0 ]
 	}
 
 }
