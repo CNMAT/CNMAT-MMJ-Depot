@@ -158,12 +158,12 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "stereo_gain_with_dac~.maxpat",
+					"name" : "stereo_gain_with_dac~-bp.maxpat",
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 292.0, 175.0, 102.0, 192.0 ],
+					"patching_rect" : [ 292.0, 175.0, 79.0, 179.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -258,6 +258,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-51", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -293,7 +307,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "stereo_gain_with_dac~.maxpat",
+				"name" : "stereo_gain_with_dac~-bp.maxpat",
 				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/mixing",
 				"patcherrelativepath" : "../../patchers/mixing",
 				"type" : "JSON",
