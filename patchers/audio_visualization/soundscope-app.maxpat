@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 57.0, 286.0, 750.0, 641.0 ],
+		"rect" : [ 104.0, 100.0, 750.0, 641.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"annotation" : "audio input",
 					"comment" : "audio input",
 					"id" : "obj-43",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -91,6 +91,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 128.0, 344.388884999999959, 174.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 91.0, 174.0, 19.0 ],
@@ -303,8 +304,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -802,8 +803,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1214,8 +1215,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1463,8 +1464,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1999,7 +2000,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 577.0, 512.0, 25.0, 77.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 557.125, 291.03846150636673, 20.0, 81.96153849363327 ],
+					"presentation_rect" : [ 557.0, 292.0, 20.0, 81.96153849363327 ],
 					"stripecolor" : [ 0.513726, 0.572549, 0.592157, 1.0 ]
 				}
 
@@ -2062,8 +2063,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2431,8 +2432,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2857,6 +2858,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 274.0, 313.0, 198.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 64.0, 145.0, 22.0 ],
@@ -2877,8 +2879,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3917,11 +3919,34 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "cnmat_blue.gif",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
+				"patcherrelativepath" : "../../media/Images",
+				"type" : "GIFf",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "nothing.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/data/routing",
+				"patcherrelativepath" : "../data/routing",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "uc_license.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
+				"patcherrelativepath" : "../Z_depot_support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{
-					"fontsize" : [ 13 ],
 					"fontname" : [ "Arial" ],
+					"fontsize" : [ 13 ],
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1 ]
 				}
 ,
