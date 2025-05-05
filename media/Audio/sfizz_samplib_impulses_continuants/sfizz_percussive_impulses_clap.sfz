@@ -1,0 +1,19 @@
+
+
+<control>
+default_path=../sfizz_samplib_impulses_continuants/
+
+<group> //Group 01
+
+<region> sample=4clap_01_thump_fizz.wav key=36 pitch_keycenter=36 hikey=36 lokey=0
+<region> sample=4clap_02_low_freq_drop.wav key=37 pitch_keycenter=37 hikey=37 lokey=37
+<region> sample=4clap_03_thump_bright.wav key=38 pitch_keycenter=38 hikey=38 lokey=38
+<region> sample=4clap_04_mid_dull.wav key=39 pitch_keycenter=39 hikey=39 lokey=39
+<region> sample=4clap_05_mid_dull2.wav key=40 pitch_keycenter=40 hikey=40 lokey=40
+<region> sample=4clap_06_mid_dull3.wav key=41 pitch_keycenter=41 hikey=41 lokey=41
+<region> sample=4clap_07_mid.wav key=42 pitch_keycenter=42 hikey=42 lokey=42
+<region> sample=4clap_08_mid2.wav key=43 pitch_keycenter=43 hikey=43 lokey=43
+<region> sample=4clap_09_bright.wav key=44 pitch_keycenter=44 hikey=44 lokey=44
+<region> sample=4clap_10_bright.wav key=45 pitch_keycenter=45 hikey=45 lokey=45
+<region> sample=4clap_11_high_fizz.wav key=46 pitch_keycenter=46 hikey=127 lokey=46
+

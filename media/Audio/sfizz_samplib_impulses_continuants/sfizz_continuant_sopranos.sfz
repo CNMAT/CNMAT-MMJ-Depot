@@ -1,0 +1,21 @@
+
+<control>
+default_path=../sfizz_samplib_impulses_continuants/
+
+<group>
+group=1
+offmode=normal
+
+<region> sample=soprano_choir_01_gliss-down.wav key=36 pitch_keycenter=36 hikey=36 lokey=0 off_by=1 ampeg_release=1 
+<region> sample=soprano_choir_01_gliss_up-down.wav key=37 pitch_keycenter=37 hikey=37 lokey=37 off_by=1 ampeg_release=1 
+<region> sample=soprano_choir_01_gliss_up.wav key=38 pitch_keycenter=38 hikey=38 lokey=38 off_by=1 ampeg_release=1 
+<region> sample=soprano_choir_01_up-down-up.wav key=39 pitch_keycenter=39 hikey=39 lokey=39 off_by=1 ampeg_release=1 
+<region> sample=soprano_choir_02-oh-eee-ah.wav key=40 pitch_keycenter=40 hikey=40 lokey=40 off_by=1 ampeg_release=1 
+<region> sample=soprano_choir_02_ah.wav key=41 pitch_keycenter=41 hikey=41 lokey=41 off_by=1 ampeg_release=1 
+<region> sample=soprano_choir_02_eee.wav key=42 pitch_keycenter=42 hikey=42 lokey=42 off_by=1 ampeg_release=1 
+<region> sample=soprano_choir_02_oh.wav key=43 pitch_keycenter=43 hikey=43 lokey=43 off_by=1 ampeg_release=1 
+<region> sample=soprano_solo_01_gliss_down.wav key=44 pitch_keycenter=44 hikey=44 lokey=44 off_by=1 ampeg_release=1 
+<region> sample=soprano_solo_04_ah.wav key=45 pitch_keycenter=45 hikey=45 lokey=45 off_by=1 ampeg_release=1 
+<region> sample=soprano_solo_04_ee.wav key=46 pitch_keycenter=46 hikey=46 lokey=46 off_by=1 ampeg_release=1 
+<region> sample=soprano_solo_04_ee_ah.wav key=47 pitch_keycenter=47 hikey=127 lokey=47 off_by=1 ampeg_release=1 
+

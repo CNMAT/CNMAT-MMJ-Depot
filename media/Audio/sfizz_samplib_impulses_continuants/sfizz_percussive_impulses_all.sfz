@@ -1,0 +1,67 @@
+
+
+<control>
+default_path=../sfizz_samplib_impulses_continuants/
+
+<group> //Group 01
+
+<region> sample=1thump_00_verylow.wav key=36 pitch_keycenter=36 hikey=36 lokey=0
+<region> sample=1thump_01_low_fuzz.wav key=37 pitch_keycenter=37 hikey=37 lokey=37
+<region> sample=1thump_02_click.wav key=38 pitch_keycenter=38 hikey=38 lokey=38
+<region> sample=1thump_03_high.wav key=39 pitch_keycenter=39 hikey=39 lokey=39
+<region> sample=1thump_04_high2.wav key=40 pitch_keycenter=40 hikey=40 lokey=40
+<region> sample=1thump_05_low_3.wav key=41 pitch_keycenter=41 hikey=41 lokey=41
+<region> sample=1thump_06_low_4.wav key=42 pitch_keycenter=42 hikey=42 lokey=42
+<region> sample=1thump_07_low_5.wav key=43 pitch_keycenter=43 hikey=43 lokey=43
+<region> sample=1thump_08_low_click.wav key=44 pitch_keycenter=44 hikey=44 lokey=44
+<region> sample=1thump_09_low_high.wav key=45 pitch_keycenter=45 hikey=45 lokey=45
+<region> sample=1thump_10_low_pitch.wav key=46 pitch_keycenter=46 hikey=46 lokey=46
+<region> sample=1thump_11_low_snare.wav key=47 pitch_keycenter=47 hikey=47 lokey=47
+<region> sample=1thump_12_low_high_2.wav key=48 pitch_keycenter=48 hikey=48 lokey=48
+<region> sample=1thump_13_low2.wav key=49 pitch_keycenter=49 hikey=49 lokey=49
+<region> sample=1thump_14_low4.wav key=50 pitch_keycenter=50 hikey=50 lokey=50
+<region> sample=1thump_15_mid_bouncy.wav key=51 pitch_keycenter=51 hikey=51 lokey=51
+<region> sample=1thump_16_mid_pitch.wav key=52 pitch_keycenter=52 hikey=52 lokey=52
+<region> sample=1thump_17_tom.wav key=53 pitch_keycenter=53 hikey=53 lokey=53
+<region> sample=1thump_18_tuh.wav key=54 pitch_keycenter=54 hikey=54 lokey=54
+<region> sample=2metal_01_combo.wav key=55 pitch_keycenter=55 hikey=55 lokey=55
+<region> sample=2metal_02_bright_high.wav key=56 pitch_keycenter=56 hikey=56 lokey=56
+<region> sample=2metal_03_cow.wav key=57 pitch_keycenter=57 hikey=57 lokey=57
+<region> sample=2metal_04_mid.wav key=58 pitch_keycenter=58 hikey=58 lokey=58
+<region> sample=2metal_05_low.wav key=59 pitch_keycenter=59 hikey=59 lokey=59
+<region> sample=2metal_06_high.wav key=60 pitch_keycenter=60 hikey=60 lokey=60
+<region> sample=2metal_07_mute_low.wav key=61 pitch_keycenter=61 hikey=61 lokey=61
+<region> sample=2metal_08_mute.wav key=62 pitch_keycenter=62 hikey=62 lokey=62
+<region> sample=2metal_09_short.wav key=63 pitch_keycenter=63 hikey=63 lokey=63
+<region> sample=3noise_00_high_low.wav key=64 pitch_keycenter=64 hikey=64 lokey=64
+<region> sample=3noise_01_pizz_mid.wav key=65 pitch_keycenter=65 hikey=65 lokey=65
+<region> sample=3noise_02_pizz.wav key=66 pitch_keycenter=66 hikey=66 lokey=66
+<region> sample=3noise_03_shrt.wav key=67 pitch_keycenter=67 hikey=67 lokey=67
+<region> sample=3noise_04_shrt2.wav key=68 pitch_keycenter=68 hikey=68 lokey=68
+<region> sample=3noise_05_thump.wav key=69 pitch_keycenter=69 hikey=69 lokey=69
+<region> sample=3noise_06_whoosh.wav key=70 pitch_keycenter=70 hikey=70 lokey=70
+<region> sample=3noise_07_metal.wav key=71 pitch_keycenter=71 hikey=71 lokey=71
+<region> sample=4clap_01_thump_fizz.wav key=72 pitch_keycenter=72 hikey=72 lokey=72
+<region> sample=4clap_02_low_freq_drop.wav key=73 pitch_keycenter=73 hikey=73 lokey=73
+<region> sample=4clap_03_thump_bright.wav key=74 pitch_keycenter=74 hikey=74 lokey=74
+<region> sample=4clap_04_mid_dull.wav key=75 pitch_keycenter=75 hikey=75 lokey=75
+<region> sample=4clap_05_mid_dull2.wav key=76 pitch_keycenter=76 hikey=76 lokey=76
+<region> sample=4clap_06_mid_dull3.wav key=77 pitch_keycenter=77 hikey=77 lokey=77
+<region> sample=4clap_07_mid.wav key=78 pitch_keycenter=78 hikey=78 lokey=78
+<region> sample=4clap_08_mid2.wav key=79 pitch_keycenter=79 hikey=79 lokey=79
+<region> sample=4clap_09_bright.wav key=80 pitch_keycenter=80 hikey=80 lokey=80
+<region> sample=4clap_10_bright.wav key=81 pitch_keycenter=81 hikey=81 lokey=81
+<region> sample=4clap_11_high_fizz.wav key=82 pitch_keycenter=82 hikey=82 lokey=82
+<region> sample=5click_00_mid.wav key=83 pitch_keycenter=83 hikey=83 lokey=83
+<region> sample=5click_01_rim.wav key=84 pitch_keycenter=84 hikey=84 lokey=84
+<region> sample=5click_02.wav key=85 pitch_keycenter=85 hikey=85 lokey=85
+<region> sample=5click_03_fng_high.wav key=86 pitch_keycenter=86 hikey=86 lokey=86
+<region> sample=5click_04_fng_mid.wav key=87 pitch_keycenter=87 hikey=87 lokey=87
+<region> sample=5click_05_fng_mid2.wav key=88 pitch_keycenter=88 hikey=88 lokey=88
+<region> sample=5click_06_high.wav key=89 pitch_keycenter=89 hikey=89 lokey=89
+<region> sample=5click_07_high_crunchy.wav key=90 pitch_keycenter=90 hikey=90 lokey=90
+<region> sample=5click_08_pure.wav key=91 pitch_keycenter=91 hikey=91 lokey=91
+<region> sample=5click_09_pure2.wav key=92 pitch_keycenter=92 hikey=92 lokey=92
+<region> sample=5click_10_rim.wav key=93 pitch_keycenter=93 hikey=93 lokey=93
+<region> sample=5click_11_high.wav key=94 pitch_keycenter=94 hikey=127 lokey=94
+

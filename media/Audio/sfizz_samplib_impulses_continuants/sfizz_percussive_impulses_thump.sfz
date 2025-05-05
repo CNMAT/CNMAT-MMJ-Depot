@@ -1,0 +1,27 @@
+
+
+<control>
+default_path=../sfizz_samplib_impulses_continuants/
+
+<group> //Group 01
+
+<region> sample=1thump_00_verylow.wav key=36 pitch_keycenter=36 hikey=36 lokey=0 loop_mode=one_shot
+<region> sample=1thump_01_low_fuzz.wav key=37 pitch_keycenter=37 hikey=37 lokey=37 loop_mode=one_shot
+<region> sample=1thump_02_click.wav key=38 pitch_keycenter=38 hikey=38 lokey=38 loop_mode=one_shot
+<region> sample=1thump_03_high.wav key=39 pitch_keycenter=39 hikey=39 lokey=39 loop_mode=one_shot
+<region> sample=1thump_04_high2.wav key=40 pitch_keycenter=40 hikey=40 lokey=40 loop_mode=one_shot
+<region> sample=1thump_05_low_3.wav key=41 pitch_keycenter=41 hikey=41 lokey=41 loop_mode=one_shot
+<region> sample=1thump_06_low_4.wav key=42 pitch_keycenter=42 hikey=42 lokey=42 loop_mode=one_shot
+<region> sample=1thump_07_low_5.wav key=43 pitch_keycenter=43 hikey=43 lokey=43 loop_mode=one_shot
+<region> sample=1thump_08_low_click.wav key=44 pitch_keycenter=44 hikey=44 lokey=44 loop_mode=one_shot
+<region> sample=1thump_09_low_high.wav key=45 pitch_keycenter=45 hikey=45 lokey=45 loop_mode=one_shot
+<region> sample=1thump_10_low_pitch.wav key=46 pitch_keycenter=46 hikey=46 lokey=46 loop_mode=one_shot
+<region> sample=1thump_11_low_snare.wav key=47 pitch_keycenter=47 hikey=47 lokey=47 loop_mode=one_shot
+<region> sample=1thump_12_low_high_2.wav key=48 pitch_keycenter=48 hikey=48 lokey=48 loop_mode=one_shot
+<region> sample=1thump_13_low2.wav key=49 pitch_keycenter=49 hikey=49 lokey=49 loop_mode=one_shot
+<region> sample=1thump_14_low4.wav key=50 pitch_keycenter=50 hikey=50 lokey=50 loop_mode=one_shot
+<region> sample=1thump_15_mid_bouncy.wav key=51 pitch_keycenter=51 hikey=51 lokey=51 loop_mode=one_shot
+<region> sample=1thump_16_mid_pitch.wav key=52 pitch_keycenter=52 hikey=52 lokey=52 loop_mode=one_shot
+<region> sample=1thump_17_tom.wav key=53 pitch_keycenter=53 hikey=53 lokey=53 loop_mode=one_shot
+<region> sample=1thump_18_tuh.wav key=54 pitch_keycenter=54 hikey=54 lokey=54 loop_mode=one_shot
+

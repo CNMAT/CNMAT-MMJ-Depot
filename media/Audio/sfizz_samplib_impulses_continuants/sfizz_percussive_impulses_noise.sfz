@@ -1,0 +1,16 @@
+
+
+<control>
+default_path=../sfizz_samplib_impulses_continuants/
+
+<group> //Group 01
+
+<region> sample=3noise_00_high_low.wav key=36 pitch_keycenter=36 hikey=36 lokey=0
+<region> sample=3noise_01_pizz_mid.wav key=37 pitch_keycenter=37 hikey=37 lokey=37
+<region> sample=3noise_02_pizz.wav key=38 pitch_keycenter=38 hikey=38 lokey=38
+<region> sample=3noise_03_shrt.wav key=39 pitch_keycenter=39 hikey=39 lokey=39
+<region> sample=3noise_04_shrt2.wav key=40 pitch_keycenter=40 hikey=40 lokey=40
+<region> sample=3noise_05_thump.wav key=41 pitch_keycenter=41 hikey=41 lokey=41
+<region> sample=3noise_06_whoosh.wav key=42 pitch_keycenter=42 hikey=42 lokey=42
+<region> sample=3noise_07_metal.wav key=43 pitch_keycenter=43 hikey=127 lokey=43
+
