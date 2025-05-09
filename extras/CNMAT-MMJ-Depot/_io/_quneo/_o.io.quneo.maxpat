@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
+			"minor" : 6,
 			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -599.0, -953.0, 802.0, 414.0 ],
+		"rect" : [ 134.0, 172.0, 802.0, 414.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -48,6 +48,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-12",
 					"lockeddragscroll" : 1,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "banner.maxpat",
 					"numinlets" : 0,
@@ -69,6 +70,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-14",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "badge.maxpat",
 					"numinlets" : 0,
@@ -89,7 +91,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
+							"minor" : 6,
 							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -133,9 +135,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 429.0, 214.0, 174.0, 34.0 ],
-									"text" : "/velocity : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 429.0, 214.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -148,9 +148,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 230.0, 214.0, 174.0, 34.0 ],
-									"text" : "/pressure : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 230.0, 214.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -224,9 +222,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 27.0, 214.0, 174.0, 34.0 ],
-									"text" : "/location : 83",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 27.0, 214.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -316,7 +312,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
+							"minor" : 6,
 							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -360,9 +356,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 563.5, 222.0, 158.0, 34.0 ],
-									"text" : "/pressure : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 563.5, 222.0, 158.0, 34.0 ]
 								}
 
 							}
@@ -375,9 +369,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 497.0, 269.0, 174.0, 34.0 ],
-									"text" : "/velocity : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 497.0, 269.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -402,9 +394,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 326.5, 222.0, 158.0, 34.0 ],
-									"text" : "/pressure : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 326.5, 222.0, 158.0, 34.0 ]
 								}
 
 							}
@@ -417,9 +407,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 260.0, 269.0, 174.0, 34.0 ],
-									"text" : "/velocity : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 260.0, 269.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -505,9 +493,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 93.5, 222.0, 158.0, 34.0 ],
-									"text" : "/pressure : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 93.5, 222.0, 158.0, 34.0 ]
 								}
 
 							}
@@ -520,9 +506,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 27.0, 269.0, 174.0, 34.0 ],
-									"text" : "/velocity : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 27.0, 269.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -667,7 +651,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
+							"minor" : 6,
 							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -711,8 +695,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 835.5, 222.0, 158.0, 34.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 835.5, 222.0, 158.0, 34.0 ]
 								}
 
 							}
@@ -725,8 +708,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 769.0, 269.0, 174.0, 34.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 769.0, 269.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -763,8 +745,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 602.5, 222.0, 158.0, 34.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 602.5, 222.0, 158.0, 34.0 ]
 								}
 
 							}
@@ -777,8 +758,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 536.0, 269.0, 174.0, 34.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 536.0, 269.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -803,9 +783,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 326.5, 222.0, 158.0, 34.0 ],
-									"text" : "/pressure : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 326.5, 222.0, 158.0, 34.0 ]
 								}
 
 							}
@@ -818,9 +796,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 260.0, 269.0, 174.0, 34.0 ],
-									"text" : "/velocity : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 260.0, 269.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -906,9 +882,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 93.5, 222.0, 158.0, 34.0 ],
-									"text" : "/pressure : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 93.5, 222.0, 158.0, 34.0 ]
 								}
 
 							}
@@ -921,9 +895,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 27.0, 269.0, 174.0, 34.0 ],
-									"text" : "/velocity : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 27.0, 269.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -1084,7 +1056,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
+							"minor" : 6,
 							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1177,8 +1149,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 210.333327999999995, 267.0, 158.0, 34.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 210.333327999999995, 267.0, 158.0, 34.0 ]
 								}
 
 							}
@@ -1191,8 +1162,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.666663999999997, 216.0, 174.0, 34.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 118.666663999999997, 216.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -1205,8 +1175,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 27.0, 165.0, 174.0, 34.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 27.0, 165.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -1297,7 +1266,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
+							"minor" : 6,
 							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1390,8 +1359,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 210.333327999999995, 267.0, 158.0, 34.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 210.333327999999995, 267.0, 158.0, 34.0 ]
 								}
 
 							}
@@ -1404,8 +1372,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.666663999999997, 216.0, 174.0, 34.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 118.666663999999997, 216.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -1418,8 +1385,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 27.0, 165.0, 174.0, 34.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 27.0, 165.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -1534,7 +1500,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
+							"minor" : 6,
 							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1578,9 +1544,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 342.666687000000024, 238.0, 118.0, 34.0 ],
-									"text" : "/velocity : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 342.666687000000024, 238.0, 118.0, 34.0 ]
 								}
 
 							}
@@ -1642,9 +1606,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 207.666686999999996, 238.0, 118.0, 34.0 ],
-									"text" : "/pressure : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 207.666686999999996, 238.0, 118.0, 34.0 ]
 								}
 
 							}
@@ -1657,9 +1619,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 211.666686999999996, 165.0, 174.0, 34.0 ],
-									"text" : "/width : 24",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 211.666686999999996, 165.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -1672,9 +1632,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 27.0, 165.0, 174.0, 34.0 ],
-									"text" : "/position : 35",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"patching_rect" : [ 27.0, 165.0, 174.0, 34.0 ]
 								}
 
 							}
@@ -1771,8 +1729,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 460.0, 200.0, 300.0, 34.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"patching_rect" : [ 460.0, 200.0, 300.0, 34.0 ]
 				}
 
 			}
@@ -1786,7 +1743,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
+							"minor" : 6,
 							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1855,8 +1812,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 323.5, 208.0, 130.0, 34.0 ],
-									"text" : "/velocity : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"text" : "/velocity : 0"
 								}
 
 							}
@@ -1870,8 +1826,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 223.5, 208.0, 87.0, 34.0 ],
-									"text" : "/z : 0",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"text" : "/z : 0"
 								}
 
 							}
@@ -1885,8 +1840,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 126.5, 208.0, 87.0, 34.0 ],
-									"text" : "/y : 63",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"text" : "/y : 63"
 								}
 
 							}
@@ -1924,8 +1878,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 29.500008000000001, 208.0, 87.0, 34.0 ],
-									"text" : "/x : 63",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"text" : "/x : 63"
 								}
 
 							}
@@ -2021,8 +1974,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 82.0, 90.0, 114.0, 22.0 ],
-					"text" : "o.io.quneo QUNEO"
+					"patching_rect" : [ 82.0, 90.0, 106.0, 22.0 ],
+					"text" : "o.io.quneo QuNeo"
 				}
 
 			}
@@ -2145,95 +2098,102 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "o.io.quneo.maxpat",
-				"bootpath" : "~/Desktop/Summer Research/from Rama/io/quneo",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.pad.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.hslide.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.vslide.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.rot.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.lrarrow.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.udarrow.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.transport.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.quneo.h.rslider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"type" : "JSON",
+				"name" : "CNMAT_logo.png",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
+				"patcherrelativepath" : "../../../../media/Images",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "badge.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot/patchers/depot_support",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/CNMAT-MMJ-Depot/patchers/depot_support",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
+				"patcherrelativepath" : "../../../../patchers/Z_depot_support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "banner.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot/patchers/depot_support",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/CNMAT-MMJ-Depot/patchers/depot_support",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
+				"patcherrelativepath" : "../../../../patchers/Z_depot_support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "CNMAT_logo.png",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot/media/Images",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/CNMAT-MMJ-Depot/media/Images",
-				"type" : "PNG",
+				"name" : "cnmat_blue.gif",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
+				"patcherrelativepath" : "../../../../media/Images",
+				"type" : "GIFf",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.display.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.io.quneo.h.hslide.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.quneo.h.lrarrow.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.quneo.h.pad.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.quneo.h.rot.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.quneo.h.rslider.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.quneo.h.transport.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.quneo.h.udarrow.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.quneo.h.vslide.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.quneo.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2243,6 +2203,13 @@
 , 			{
 				"name" : "o.select.mxo",
 				"type" : "iLaX"
+			}
+, 			{
+				"name" : "uc_license.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
+				"patcherrelativepath" : "../../../../patchers/Z_depot_support",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0

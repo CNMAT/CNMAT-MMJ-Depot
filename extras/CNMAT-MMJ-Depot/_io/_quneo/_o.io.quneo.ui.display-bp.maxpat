@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 93.0, 79.0, 1302.0, 755.0 ],
+		"rect" : [ 134.0, 172.0, 1312.0, 689.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "gridded",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 648.0, 25.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"args" : [ "o.io.quneo.ui.display", "ui for the quneo", "0 0 0 0.75" ],
 					"bgmode" : 0,
@@ -101,27 +113,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-9",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "o.io.quneo.ui.display-bp.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 675.0, 260.0, 590.0, 455.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -131,7 +122,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 15.0, 105.0, 590.0, 455.0 ],
+					"patching_rect" : [ 15.0, 105.0, 595.0, 455.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -191,8 +182,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 15.0, 15.0, 114.0, 22.0 ],
-					"text" : "o.io.quneo QUNEO"
+					"patching_rect" : [ 15.0, 15.0, 106.0, 22.0 ],
+					"text" : "o.io.quneo QuNeo"
 				}
 
 			}
@@ -223,15 +214,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"order" : 0,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -243,31 +225,38 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CNMAT_logo.png",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/media/Images",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
 				"patcherrelativepath" : "../../../../media/Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "badge.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/Z_depot_support",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
 				"patcherrelativepath" : "../../../../patchers/Z_depot_support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "banner.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/Z_depot_support",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
 				"patcherrelativepath" : "../../../../patchers/Z_depot_support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cnmat_blue.gif",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/media/Images",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
 				"patcherrelativepath" : "../../../../media/Images",
 				"type" : "GIFf",
 				"implicit" : 1
@@ -286,126 +275,126 @@
 			}
 , 			{
 				"name" : "o.io.quneo.h.hslide.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.lrarrow.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.pad.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.rot.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.rslider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.transport.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.udarrow.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.h.vslide.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../Music-and-Computing/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.arrow.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
 				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.display-bp.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
 				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.hslide.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
 				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.mfilter.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
 				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.pad.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
 				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.rot.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
 				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.rpressure.js",
-				"bootpath" : "~/Documents/max_enabled/pedagogy/__other_teachers/158a_maija/patchers/io/quneo",
-				"patcherrelativepath" : "../../../../../../../max_enabled/pedagogy/__other_teachers/158a_maija/patchers/io/quneo",
+				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/quneo",
+				"patcherrelativepath" : "../../../../../../Max 8/Packages/Music-and-Computing/patchers/io/quneo",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.rslider.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
 				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.quneo.ui.vslide.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/io/quneo",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io/quneo",
 				"patcherrelativepath" : "../../../../patchers/io/quneo",
 				"type" : "JSON",
 				"implicit" : 1
@@ -428,7 +417,7 @@
 			}
 , 			{
 				"name" : "uc_license.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-MMJ-Depot-2-Jon-230810/patchers/Z_depot_support",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/Z_depot_support",
 				"patcherrelativepath" : "../../../../patchers/Z_depot_support",
 				"type" : "JSON",
 				"implicit" : 1
