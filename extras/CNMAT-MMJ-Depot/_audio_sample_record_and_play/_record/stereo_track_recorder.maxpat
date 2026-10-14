@@ -3,8 +3,8 @@
         "fileversion": 1,
         "appversion": {
             "major": 9,
-            "minor": 2,
-            "revision": 0,
+            "minor": 1,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
@@ -270,8 +270,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 2,
-                            "revision": 0,
+                            "minor": 1,
+                            "revision": 5,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -429,7 +429,7 @@
                     "numoutlets": 4,
                     "outlettype": [ "bang", "bang", "", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 587.0, 391.0, 100.0, 48.0 ]
+                    "patching_rect": [ 588.0, 391.0, 100.0, 48.0 ]
                 }
             },
             {
@@ -441,7 +441,7 @@
                     "numoutlets": 4,
                     "outlettype": [ "bang", "bang", "", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 478.0, 391.0, 100.0, 48.0 ]
+                    "patching_rect": [ 480.0, 391.0, 100.0, 48.0 ]
                 }
             },
             {
@@ -523,8 +523,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 2,
-                            "revision": 0,
+                            "minor": 1,
+                            "revision": 5,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1015,7 +1015,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-46",
-                    "items": [ "None", ",", "System Device: CAMP1248", ",", "LG ULTRAWIDE", ",", "MacBook Pro Speakers", ",", "Microsoft Teams Audio", ",", "Pro Tools Audio Bridge 16", ",", "Pro Tools Audio Bridge 2-A", ",", "Pro Tools Audio Bridge 2-B", ",", "Pro Tools Audio Bridge 32", ",", "Pro Tools Audio Bridge 64", ",", "Pro Tools Audio Bridge 6", ",", "Pro Tools Aggregate I/O", ",", "Loopback Audio", ",", "CAMP1248", ",", "ZoomAudioDevice" ],
+                    "items": [ "None", ",", "System Device: MacBook Pro Speakers", ",", "MacBook Pro Speakers" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1038,7 +1038,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-47",
-                    "items": [ "None", ",", "System Device: CAMP1248", ",", "MacBook Pro Microphone", ",", "Microsoft Teams Audio", ",", "Pro Tools Audio Bridge 16", ",", "Pro Tools Audio Bridge 2-A", ",", "Pro Tools Audio Bridge 2-B", ",", "Pro Tools Audio Bridge 32", ",", "Pro Tools Audio Bridge 64", ",", "Pro Tools Audio Bridge 6", ",", "Pro Tools Aggregate I/O", ",", "Loopback Audio", ",", "CAMP1248", ",", "ZoomAudioDevice" ],
+                    "items": [ "None", ",", "System Device: MacBook Pro Microphone", ",", "edmund campion’s iPhone Microphone", ",", "MacBook Pro Microphone" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1089,7 +1089,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-50",
-                    "items": [ 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000 ],
+                    "items": [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
